@@ -1,0 +1,13 @@
+CREATE TABLE `tb_salon` (
+  `sa_id` VARCHAR(6) NOT NULL , 
+  `sa_grado` INT(1) NOT NULL , 
+  `sa_seccion` VARCHAR(2) NOT NULL , 
+  `sa_docente` VARCHAR(30) NOT NULL , 
+  `sa_materia` VARCHAR(30) NOT NULL 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+ALTER TABLE `tb_salon`
+  ADD PRIMARY KEY (`sa_id`);
+
+ALTER TABLE `tb_salon`
+  MODIFY `sa_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
